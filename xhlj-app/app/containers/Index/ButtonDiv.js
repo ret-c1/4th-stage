@@ -1,0 +1,10 @@
+import styled from 'styled-components';
+
+const ButtonDiv = styled.div`
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+`;
+
+export default ButtonDiv;

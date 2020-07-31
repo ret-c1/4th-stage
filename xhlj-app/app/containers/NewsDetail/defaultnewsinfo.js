@@ -1,0 +1,15 @@
+export const defaultnewsinfo = {
+    Created: 0,
+    Delete: false,
+    Forward: 0,
+    Html: '',
+    Like: 0,
+    NewsId: '0',
+    Pic: 'http://aht-cdn.dbappsecurity.com.cn/banner.jpg',
+    PushTime: '',
+    Reading: 0,
+    Source: '',
+    Text: [],
+    Title: '',
+    Topping: true,
+};
