@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="238px" height="78px" viewBox="0 0 238 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组 23备份 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-应急v2.0-整体概况" transform="translate(-570.000000, -549.000000)">
+            <g id="应急跟踪进度" transform="translate(248.000000, 411.000000)">
+                <g id="编组-23备份-4" transform="translate(322.000000, 138.000000)">
+                    <circle id="椭圆形备份" fill="#3590FF" cx="4" cy="4" r="4"></circle>
+                    <polyline id="直线备份" stroke="#3590FF" stroke-width="2" opacity="0.5" stroke-linecap="square" points="4 4 4 68 237 68"></polyline>
+                    <g id="编组-10" transform="translate(99.000000, 68.000000) scale(-1, 1) translate(-99.000000, -68.000000) translate(86.000000, 58.000000)" fill="#1890FF">
+                        <polygon id="矩形备份-22" points="0 0 10 0 18 10 10 20 0 20 8 10"></polygon>
+                        <polygon id="矩形备份-23" opacity="0.7" points="14 0 18 -8.8817842e-15 26 10 18 20 14 20 22 10"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="920px" height="41px" viewBox="0 0 920 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 29</title>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0.513416688%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.6" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="3.77554094%" cy="0%" fx="3.77554094%" fy="0%" r="591.290324%" gradientTransform="translate(0.037755,0.000000),scale(0.022669,1.000000),rotate(180.000000),scale(1.000000,0.095243),translate(-0.037755,-0.000000)" id="radialGradient-2">
+            <stop stop-color="#FACE49" stop-opacity="0.3" offset="0%"></stop>
+            <stop stop-color="#FACE49" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <path d="M127,0 L127,40 L18.8515625,40 C14.2838542,39.3333333 10.3333333,37.6666667 7,35 C3.66666667,32.3333333 1.33333333,28.6666667 0,24 L0,0 L127,0 Z" id="path-3"></path>
+        <radialGradient cx="25.5303518%" cy="50%" fx="25.5303518%" fy="50%" r="554.756642%" gradientTransform="translate(0.255304,0.500000),scale(0.090278,1.000000),rotate(179.999967),scale(1.000000,0.059011),translate(-0.255304,-0.500000)" id="radialGradient-5">
+            <stop stop-color="#FACE49" offset="0%"></stop>
+            <stop stop-color="#FACE49" offset="37.5026394%"></stop>
+            <stop stop-color="#FACE49" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-31.2%" y="-346.2%" width="162.5%" height="792.3%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="15" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <circle id="path-7" cx="21" cy="20" r="15"></circle>
+        <filter x="-21.7%" y="-21.7%" width="143.3%" height="143.3%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.980392157   0 0 0 0 0.807843137   0 0 0 0 0.28627451  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-应急v2.0-最新事件" transform="translate(-231.000000, -293.000000)">
+            <g id="编组-29" transform="translate(232.000000, 294.000000)">
+                <path d="M20,0 L919,0 L919,0 L919,40 L20,40 C8.954305,40 1.3527075e-15,31.045695 0,20 C-1.3527075e-15,8.954305 8.954305,2.02906125e-15 20,0 Z" id="矩形" fill-opacity="0.7" fill="url(#linearGradient-1)"></path>
+                <path d="M0.018112378,20.8326578 C0,20.5552693 0,20.2776511 0,20 C0,8.954305 8.954305,0 20,0 L919,0 L919,0" id="路径" stroke="url(#radialGradient-2)"></path>
+                <g id="椭圆形">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="蒙版" transform="translate(63.500000, 20.000000) scale(1, -1) translate(-63.500000, -20.000000) "></g>
+                    <path d="M58,8 C95.8737679,8 130,4.3718807 130,1.5 C130,-1.3718807 95.8737679,-5 58,-5 C20.1262321,-5 -14,-1.3718807 -14,1.5 C-14,4.3718807 20.1262321,8 58,8 Z" fill="url(#radialGradient-5)" filter="url(#filter-6)" mask="url(#mask-4)"></path>
+                </g>
+                <g id="Icon/Warning" transform="translate(9.000000, 8.000000)">
+                    <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                    <path d="M12,1.5 C6.2015625,1.5 1.5,6.2015625 1.5,12 C1.5,17.7984375 6.2015625,22.5 12,22.5 C17.7984375,22.5 22.5,17.7984375 22.5,12 C22.5,6.2015625 17.7984375,1.5 12,1.5 Z M11.25,6.9375 C11.25,6.834375 11.334375,6.75 11.4375,6.75 L12.5625,6.75 C12.665625,6.75 12.75,6.834375 12.75,6.9375 L12.75,13.3125 C12.75,13.415625 12.665625,13.5 12.5625,13.5 L11.4375,13.5 C11.334375,13.5 11.25,13.415625 11.25,13.3125 L11.25,6.9375 Z M12,17.25 C11.3789062,17.25 10.875,16.7460938 10.875,16.125 C10.875,15.5039062 11.3789062,15 12,15 C12.6210938,15 13.125,15.5039062 13.125,16.125 C13.125,16.7460938 12.6210938,17.25 12,17.25 Z" id="形状" fill="#FACE49"></path>
+                </g>
+                <g id="椭圆形" opacity="0.4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                    <use stroke="#FACE49" stroke-width="1" xlink:href="#path-7"></use>
+                </g>
+                <rect id="矩形" fill-opacity="0.2" fill="#D8D8D8" x="192" y="8" width="1" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

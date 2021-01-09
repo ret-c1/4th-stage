@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="115px" height="22px" viewBox="0 0 115 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组 24备份 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-应急v2.0-整体概况" transform="translate(-877.000000, -526.000000)">
+            <g id="应急跟踪进度" transform="translate(248.000000, 160.000000)">
+                <g id="编组-10" transform="translate(489.000000, 0.000000)">
+                    <g id="编组-24备份-2" transform="translate(197.000000, 377.000000) rotate(90.000000) translate(-197.000000, -377.000000) translate(185.500000, 319.500000)">
+                        <circle id="椭圆形备份" fill="#3590FF" transform="translate(12.000000, 110.500000) rotate(90.000000) translate(-12.000000, -110.500000) " cx="12" cy="110.5" r="4"></circle>
+                        <g id="编组-22" transform="translate(11.500000, 59.000000) rotate(180.000000) translate(-11.500000, -59.000000) translate(0.500000, 45.000000)" fill="#3590FF">
+                            <polygon id="矩形" transform="translate(11.000000, 10.500000) rotate(90.000000) translate(-11.000000, -10.500000) " points="1 2.28830843e-13 12.3043478 2.28830843e-13 21 10.5 12.3043478 21 1 21 9.69565217 10.5"></polygon>
+                            <polygon id="矩形备份-11" opacity="0.6" transform="translate(11.500000, 21.500000) rotate(90.000000) translate(-11.500000, -21.500000) " points="5 11 9.33333333 11 18 21.5 9.33333333 32 5 32 13.6666667 21.5"></polygon>
+                        </g>
+                        <line x1="11.5" y1="5" x2="11.5" y2="110.5" id="直线备份-2" stroke="#3590FF" stroke-width="2" opacity="0.5" stroke-linecap="square"></line>
+                        <circle id="椭圆形备份-3" fill="#3590FF" transform="translate(12.000000, 4.000000) rotate(90.000000) translate(-12.000000, -4.000000) " cx="12" cy="4" r="4"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

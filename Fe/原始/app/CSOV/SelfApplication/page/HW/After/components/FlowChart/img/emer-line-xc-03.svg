@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="135px" viewBox="0 0 20 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组 24备份 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-应急v2.0-整体概况" transform="translate(-998.000000, -550.000000)">
+            <g id="应急跟踪进度" transform="translate(248.000000, 411.000000)">
+                <g id="编组-10" transform="translate(447.000000, 0.000000)">
+                    <g id="编组-24备份-3" transform="translate(303.000000, 139.000000)">
+                        <circle id="椭圆形备份-3" fill="#3590FF" transform="translate(10.000000, 4.000000) rotate(90.000000) translate(-10.000000, -4.000000) " cx="10" cy="4" r="4"></circle>
+                        <g id="编组-10" transform="translate(10.000000, 67.000000) rotate(90.000000) translate(-10.000000, -67.000000) translate(-3.000000, 57.000000)" fill="#1890FF">
+                            <polygon id="矩形备份-22" points="0 0 10 0 18 10 10 20 0 20 8 10"></polygon>
+                            <polygon id="矩形备份-23" opacity="0.7" points="14 0 18 -8.8817842e-15 26 10 18 20 14 20 22 10"></polygon>
+                        </g>
+                        <line x1="10" y1="5" x2="10" y2="131" id="直线备份-2" stroke="#3590FF" stroke-width="2" opacity="0.5" stroke-linecap="square"></line>
+                        <circle id="椭圆形备份" fill="#3590FF" transform="translate(10.000000, 131.000000) rotate(90.000000) translate(-10.000000, -131.000000) " cx="10" cy="131" r="4"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

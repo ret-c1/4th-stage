@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="199px" height="41px" viewBox="0 0 199 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组 3备份 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="52.3033144%" y1="0.221974309%" x2="52.3033144%" y2="127.426706%" id="linearGradient-1">
+            <stop stop-color="#01F0FF" stop-opacity="0.4" offset="0%"></stop>
+            <stop stop-color="#01F0FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="197" height="40"></rect>
+        <radialGradient cx="44.1610327%" cy="52.2063247%" fx="44.1610327%" fy="52.2063247%" r="118.392108%" gradientTransform="translate(0.441610,0.522063),scale(0.250000,1.000000),rotate(180.000000),scale(1.000000,0.078079),translate(-0.441610,-0.522063)" id="radialGradient-4">
+            <stop stop-color="#01F0FF" offset="0%"></stop>
+            <stop stop-color="#01F0FF" offset="52.3727829%"></stop>
+            <stop stop-color="#01F0FF" stop-opacity="0.1" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-18.1%" y="-72.6%" width="136.3%" height="245.2%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="15" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="9206.46256%" gradientTransform="translate(0.500000,0.500000),scale(0.005587,1.000000),rotate(180.000000),scale(1.000000,57.066900),translate(-0.500000,-0.500000)" id="radialGradient-6">
+            <stop stop-color="#01F0FF" offset="0%"></stop>
+            <stop stop-color="#01F0FF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-应急v2.0-整体概况" transform="translate(-1125.000000, -358.000000)">
+            <g id="编组-3备份-2" transform="translate(1126.000000, 359.000000)">
+                <rect id="矩形" fill-opacity="0.1" fill="#3590FF" x="0" y="0" width="197" height="40"></rect>
+                <polyline id="路径" stroke="url(#linearGradient-1)" points="0 40 0 0 197 0 197 40"></polyline>
+                <g id="椭圆形" opacity="0.7">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="蒙版" transform="translate(98.500000, 20.000000) scale(1, -1) translate(-98.500000, -20.000000) "></g>
+                    <path d="M114.473997,30 C179.701042,30 237,16.1208272 237,-1 C237,-18.1208272 179.701042,-32 114.473997,-32 C49.2469524,-32 -11,-18.1208272 -11,-1 C-11,16.1208272 49.2469524,30 114.473997,30 Z" fill="url(#radialGradient-4)" filter="url(#filter-5)" mask="url(#mask-3)"></path>
+                </g>
+                <rect id="矩形-copy备份" fill="url(#radialGradient-6)" x="9" y="0" width="179" height="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

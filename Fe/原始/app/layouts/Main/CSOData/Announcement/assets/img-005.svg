@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="36px" viewBox="0 0 44 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组 5备份 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="8 0 44 0 44 28 38 36 21 36 21 28 0 28 0 9"></polygon>
+        <filter x="-4.5%" y="-5.6%" width="109.1%" height="111.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.450980392   0 0 0 0 0.556862745  0 0 0 0.4 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="运营地图v2.0" transform="translate(-1754.000000, -131.000000)">
+            <g id="活动" transform="translate(1639.000000, 65.000000)">
+                <g id="编组-12" transform="translate(19.000000, 66.000000)">
+                    <g id="编组-5备份-2" transform="translate(96.000000, 0.000000)">
+                        <g id="矩形" transform="translate(22.000000, 18.000000) scale(-1, -1) translate(-22.000000, -18.000000) ">
+                            <use fill-opacity="0.1" fill="#FF738E" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <path stroke-opacity="0.4" stroke="#FF738E" stroke-width="1" d="M8.22453303,0.5 L0.5,9.19009966 L0.5,27.5 L21.5,27.5 L21.5,35.5 L37.75,35.5 L43.5,27.8333333 L43.5,0.5 L8.22453303,0.5 Z" stroke-linejoin="square"></path>
+                        </g>
+                        <text id="事件" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" fill="#FF738E">
+                            <tspan x="8" y="29">事件</tspan>
+                        </text>
+                        <g id="编组" transform="translate(9.000000, 3.000000)" fill="#FF738E" fill-rule="nonzero">
+                            <path d="M7.22604167,0 L2.35520833,0 C1.78086032,0.00228371874 1.31582538,0.467318662 1.31354167,1.04166667 L1.31354167,7.65416667 C1.31582539,8.22851467 1.78086033,8.69354961 2.35520833,8.69583333 L7.22604167,8.69583333 C7.80038967,8.69354961 8.26542461,8.22851467 8.26770833,7.65416667 L8.26770833,1.04166667 C8.26542462,0.467318662 7.80038968,0.00228371874 7.22604167,0 Z M6.259375,6.62083333 L4.79270833,5.83333333 L3.31354167,6.62083333 L3.596875,4.975 L2.40104167,3.8125 L4.06770833,3.57083333 L4.79270833,2.08333333 L5.53020833,3.57916667 L7.196875,3.82083333 L6.00104167,4.9875 L6.259375,6.62083333 Z" id="形状"></path>
+                            <path d="M7.22604167,8.9125 L6.809375,8.9125 C6.69481527,9.04953795 6.52548978,9.12886161 6.346875,9.12916667 L1.48854167,9.12916667 C1.32720164,9.12916667 1.17246967,9.06507459 1.05838504,8.95098996 C0.944300405,8.83690533 0.880208327,8.68217336 0.88020833,8.52083333 L0.88020833,1.9125 C0.880513392,1.73388522 0.959837047,1.56455973 1.096875,1.45 L1.096875,1.03333333 C1.10376164,0.83134834 1.15952128,0.634045014 1.259375,0.45833333 C0.542389836,0.570764524 0.0128794522,1.1867616 0.009375,1.9125 L0.009375,8.52083333 C0.009375,9.33775452 0.671620476,10 1.48854167,10 L6.35520833,10 C7.08094673,9.99649555 7.69694381,9.46698516 7.809375,8.75 C7.63118783,8.85115773 7.43086569,8.90696175 7.22604167,8.9125 Z" id="路径"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

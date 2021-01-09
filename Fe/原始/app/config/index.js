@@ -1,0 +1,12 @@
+// export const ROLE_ADMINISTRATOR = '管理员'; // 管理员
+export const ROLE_PROJECT = '项目经理'; // 项目经理
+export const ROLE_ENGINEER = '工程师'; // 工程师
+export const ROLE_PRINCIPAL = '技术负责人'; // 技术负责人
+export const ROLE_CLIENT = '客户'; // 客户
+export const ROLE_SHOWROOM = '展厅'; // 展厅
+export const ROLE_INTELLIGENCEEXPERT = '情报专家'; // 情报专家
+export const ROLE_OPERATIONEXPERT = '运营专家'; // 运营专家
+export const ROLE_DEMONSTRATE = '演示'; // 演示
+export const ROLE_ADMIN = '管理员'; // 演示
+export const ROLE_OUTSOURC_MANERGER = '外包管理人'; // 外包管理人
+export const ROLE_OUTSOURC_ENGINEER = '外包工程师'; // 外包工程师

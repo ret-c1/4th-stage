@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="648px" height="34px" viewBox="0 0 674 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组 21</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-应急v2.0-整体概况" transform="translate(-556.000000, -820.000000)">
+            <g id="应急跟踪进度" transform="translate(248.000000, 411.000000)">
+                <g id="编组-25" transform="translate(308.000000, 139.000000)">
+                    <g id="编组-21" transform="translate(0.000000, 270.000000)">
+                        <circle id="椭圆形备份-10" fill="#3590FF" cx="4" cy="5" r="4"></circle>
+                        <circle id="椭圆形备份-10" fill="#3590FF" cx="670" cy="4" r="4"></circle>
+                        <g id="编组-7" transform="translate(3.000000, 2.000000)">
+                            <g id="编组-26" transform="translate(334.000000, 23.000000) scale(1, -1) rotate(90.000000) translate(-334.000000, -23.000000) translate(325.000000, 11.000000)" fill="#3590FF">
+                                <g id="编组-19" transform="translate(0.000000, -0.000000)">
+                                    <polygon id="矩形备份-26" transform="translate(8.666667, 15.666667) rotate(-90.000000) translate(-8.666667, -15.666667) " points="1 7 9.66666667 7 16.3333333 15.6666667 9.66666667 24.3333333 1 24.3333333 7.66666667 15.6666667"></polygon>
+                                    <polygon id="矩形备份-27" opacity="0.6" transform="translate(9.000000, 5.666667) rotate(-90.000000) translate(-9.000000, -5.666667) " points="4 -3 7.33333333 -3 14 5.66666667 7.33333333 14.3333333 4 14.3333333 10.6666667 5.66666667"></polygon>
+                                </g>
+                            </g>
+                            <polyline id="直线备份-7" stroke="#3590FF" stroke-width="2" opacity="0.5" stroke-linecap="square" transform="translate(334.052906, 13.044055) rotate(89.754623) translate(-334.052906, -13.044055) " points="323 345.499748 343.25358 346.083827 345.105811 -319.914348 325.105995 -320"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

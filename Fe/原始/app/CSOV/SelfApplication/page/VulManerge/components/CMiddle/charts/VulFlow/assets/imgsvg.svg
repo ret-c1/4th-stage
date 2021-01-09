@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="197px" height="173px" viewBox="0 0 197 173" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组 4备份 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="82.5 -11 153.947096 30.25 153.947096 112.75 82.5 154 11.0529042 112.75 11.0529042 30.25"></polygon>
+        <filter x="-16.1%" y="-14.5%" width="132.2%" height="128.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="3" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="82.5 -4.65384615 148.451165 33.4230769 148.451165 109.576923 82.5 147.653846 16.5488346 109.576923 16.5488346 33.4230769"></polygon>
+        <filter x="-9.1%" y="-7.9%" width="118.2%" height="115.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="8" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="8" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.14   0 0 0 0 0.713333333   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-前v2.0" transform="translate(-1047.000000, -283.000000)">
+            <g id="漏洞处置情况" transform="translate(232.000000, 238.000000)">
+                <g id="流程图" transform="translate(363.000000, 60.000000)">
+                    <g id="编组-4备份-2" transform="translate(468.000000, 0.000000)">
+                        <g id="多边形" opacity="0.25" transform="translate(82.500000, 71.500000) rotate(90.000000) translate(-82.500000, -71.500000) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use stroke="#24B6FF" stroke-width="1" fill="#031345" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="多边形" opacity="0.6" transform="translate(82.500000, 71.500000) rotate(90.000000) translate(-82.500000, -71.500000) " fill="black" fill-opacity="1">
+                            <use filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        </g>
+                        <path d="M11.0529042,39.4215803 L11.0529042,30.25 L18.3429346,26.041099 M75.1375082,-6.74926339 L82.5,-11 L89.9057825,-6.72426947 M146.695826,26.0634775 L153.947096,30.25 L153.947096,39.4047025 M153.947096,103.583369 L153.947096,112.75 L146.73762,116.912393 M89.7894482,149.791435 L82.5,154 L75.1724123,149.769415 M18.3911464,116.986736 L11.0529042,112.75 L11.0529042,103.576044" id="形状" stroke="#3590FF" stroke-width="3" opacity="0.4" transform="translate(82.500000, 71.500000) rotate(90.000000) translate(-82.500000, -71.500000) "></path>
+                        <path d="M141.09,102 L120.622436,137.451831 L44.4685897,137.451831 L24,102 L141.09,102 Z" id="数字背景" fill-opacity="0.1" fill="#3590FF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

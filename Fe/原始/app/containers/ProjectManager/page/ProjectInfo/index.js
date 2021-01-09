@@ -1,0 +1,436 @@
+import React, { useEffect, useState } from 'react';
+import { Form, Input, Row, Col, DatePicker, Select, Button } from 'antd';
+import { useHistory } from 'react-router-dom';
+import { searchParams } from '@utils/searchParams';
+import moment from 'moment';
+import { getTopCity, getBottomCity, getProjectDetail, getProjectEdit } from '../api';
+import { ScContent } from '../styled';
+const { Option } = Select;
+const { TextArea } = Input;
+
+const AddNewProject = () => {
+    const { id } = searchParams();
+    const history = useHistory();
+    const [form] = Form.useForm();
+    const FormFinish = (values) => {
+        console.log(values);
+        console.log(values.status);
+        let dataStatu = '';
+        if (values.status) {
+            if (values.status === '全部') {
+                dataStatu = 0;
+            } else if (values.status === '未启动') {
+                dataStatu = 1;
+            } else if (values.status === '执行中') {
+                dataStatu = 2;
+            } else if (values.status === '暂停中') {
+                dataStatu = 3;
+            } else if (values.status === '已关闭') {
+                dataStatu = 4;
+            }
+        }
+        console.log(dataStatu);
+        const data = `${values.TopCity}${values.BottomCity}`;
+        getProjectEdit({
+            ...values,
+            implementationProvince: data,
+            id,
+            status: dataStatu,
+        }).then((res) => {
+            if (res.code === 200) {
+                history.push(`/project/detail?id=${id}`);
+            } else {
+                console.log('获取数据失败');
+            }
+        });
+    };
+    //  获取城市列表
+    const [topCity, setTopCity] = useState([]);
+    const [bottomCity, setBottomCity] = useState([]);
+    const handleChangeTop = (value) => {
+        let ids;
+        topCity.forEach((item) => {
+            if (item.name === value) ids = item.sort;
+        });
+        getBottomCity({ parentId: ids }).then((res) => {
+            if (res.code === 200) {
+                setBottomCity(res.data);
+            } else {
+                console.log('获取数据失败');
+            }
+        });
+    };
+    const [formdata, setFormdata] = useState({});
+    useEffect(() => {
+        getTopCity().then((res) => {
+            if (res.code === 200) {
+                setTopCity(res.data);
+            } else {
+                console.log('获取数据失败');
+            }
+        });
+        getProjectDetail({ id }).then((res) => {
+            if (res.code === 200) {
+                if (res.data.status === 0) {
+                    res.data.status = '全部';
+                } else if (res.data.status === 1) {
+                    res.data.status = '未启动';
+                } else if (res.data.status === 2) {
+                    res.data.status = '执行中';
+                } else if (res.data.status === 3) {
+                    res.data.status = '暂停中';
+                } else if (res.data.status === 4) {
+                    res.data.status = '已关闭';
+                }
+                console.log(res.data);
+                setFormdata(res.data);
+            } else {
+                console.log('获取数据失败');
+            }
+        });
+    }, []);
+    useEffect(() => {
+        form.setFieldsValue({
+            ...formdata,
+            serviceStartTime: formdata.serviceStartTime && moment(formdata.serviceStartTime),
+            serviceEndTime: formdata.serviceEndTime && moment(formdata.serviceEndTime),
+            reviewEndTime: formdata.reviewEndTime && moment(formdata.reviewEndTime),
+        });
+    }, [formdata]);
+    return (
+        <>
+            <ScContent>
+                <Form
+                    name="basic"
+                    form={form}
+                    style={{ marginTop: '20px' }}
+                    labelCol={{ span: 8 }}
+                    wrapperCol={{ span: 16 }}
+                    onFinish={FormFinish}
+                >
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item label="合同编号" name="contractNo">
+                                <Input placeholder="请输入合同编号" />
+                            </Form.Item>
+                            <Form.Item label="提前实施编号" name="no">
+                                <Input placeholder="请输入提前实施编号" />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <h1>
+                        <strong>项目信息</strong>
+                    </h1>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item
+                                label="项目名称"
+                                name="projectName"
+                                rules={[{ required: true, message: '请输入项目名称!' }]}
+                            >
+                                <Input placeholder="请输入项目名称" />
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item label="实施城市" name="implementationProvince">
+                                <Row gutter={24}>
+                                    <Col span={12}>
+                                        <Form.Item name="TopCity">
+                                            <Select onChange={handleChangeTop}>
+                                                {topCity.map((item) => (
+                                                    <Option value={item.name} key={item.sort}>
+                                                        {item.name}
+                                                    </Option>
+                                                ))}
+                                            </Select>
+                                        </Form.Item>
+                                    </Col>
+                                    <Col span={12}>
+                                        <Form.Item name="BottomCity">
+                                            <Select>
+                                                {bottomCity.map((item) => (
+                                                    <Option value={item.name} key={item.sort}>
+                                                        {item.name}
+                                                    </Option>
+                                                ))}
+                                            </Select>
+                                        </Form.Item>
+                                    </Col>
+                                </Row>
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item label="项目当前阶段" name="status">
+                                <Select>
+                                    <Option value="全部">全部</Option>
+                                    <Option value="未启动">未启动</Option>
+                                    <Option value="执行中">执行中</Option>
+                                    <Option value="暂停中">暂停中</Option>
+                                    <Option value="已关闭">已关闭</Option>
+                                </Select>
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} />
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item label="服务联系人" name="businessAttention">
+                                <Input placeholder="请输入服务联系人" />
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item label="技术联系人" name="technicalAttention">
+                                <Input placeholder="请输入技术联系人" />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item
+                                label="服务开始时间"
+                                name="serviceStartTime"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: '请选择服务开始时间!',
+                                    },
+                                ]}
+                            >
+                                <DatePicker
+                                    placeholder="请选择服务开始时间"
+                                    style={{ width: '100%' }}
+                                />
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item
+                                label="服务结束时间"
+                                name="serviceEndTime"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: '请选择服务结束时间!',
+                                    },
+                                ]}
+                            >
+                                <DatePicker
+                                    placeholder="请选择服务结束时间"
+                                    style={{ width: '100%' }}
+                                />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item
+                                label="服务名称"
+                                name="serviceName"
+                                rules={[{ required: true, message: '请输入服务名称!' }]}
+                            >
+                                <Input placeholder="请输入服务名称" />
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item label="服务数量" name="serviceQuantity">
+                                <Input placeholder="请输入服务数量" />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item label="实施情况" name="progressStatus">
+                                <Input placeholder="请输入实施情况" />
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item label="集成情况" name="integratedStatus">
+                                <Input placeholder="请输入集成情况" />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item label="合同状态" name="contractStatus">
+                                <Select placeholder="请输入合同状态">
+                                    <Option value="1">评审通过</Option>
+                                    <Option value="2">非合同</Option>
+                                    <Option value="3">提前实施</Option>
+                                    <Option value="4">战略支持</Option>
+                                </Select>
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item
+                                label="评审结束时间"
+                                name="reviewEndTime"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: '请选择评审结束时间!',
+                                    },
+                                ]}
+                            >
+                                <DatePicker
+                                    placeholder="请选择评审结束时间"
+                                    style={{ width: '100%' }}
+                                />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item label="条款比例" name="collectionRatio">
+                                <Input placeholder="请输入条款比例" />
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item label="项目经理" name="projectManager">
+                                <Input placeholder="admin" disabled />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item label="标准验收条款" name="standardAcceptanceClause">
+                                <TextArea rows={4} placeholder="请输入标准验收条款" />
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item label="非标准验收条款" name="nonStandardAcceptanceClause:">
+                                <TextArea rows={4} placeholder="请输入非标准验收条款" />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={17}>
+                            <Form.Item
+                                label="备注"
+                                name="remark"
+                                labelCol={{ span: 4 }}
+                                wrapperCol={{ span: 20 }}
+                            >
+                                <TextArea rows={4} placeholder="备注" />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <h1>
+                        <strong>客户信息</strong>
+                    </h1>
+                    <Row>
+                        <Col span={16}>
+                            <Form.Item
+                                label="最终客户全称"
+                                name="clientName"
+                                labelCol={{ span: 4 }}
+                                wrapperCol={{ span: 8 }}
+                                rules={[{ required: true, message: '请输入最终客户全称!' }]}
+                            >
+                                <Input placeholder="请输入最终客户全称" />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item label="最终客户英文简称：" name="clientEnName">
+                                <Input placeholder="请输入最终客户英文简称" />
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item label="最终客户中文简称：" name="clientNameAbb">
+                                <Input placeholder="请输入最终客户中文简称" />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item label="客户所属行业分类：" name="clientCategory">
+                                <Select placeholder="请选择客户所属行业分类">
+                                    <Option value="1">金融</Option>
+                                    <Option value="2">教育</Option>
+                                    <Option value="3">运营商</Option>
+                                    <Option value="4">能源与企业</Option>
+                                    <Option value="5">互联网</Option>
+                                    <Option value="6">渠道</Option>
+                                    <Option value="7">农业</Option>
+                                    <Option value="8">建筑业</Option>
+                                </Select>
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item label="销售部门：" name="salesDepartment">
+                                <Select placeholder="请选择销售部门">
+                                    <Option value="1">营销中心-销售管理部</Option>
+                                    <Option value="2">营销中心-行业销售</Option>
+                                    <Option value="3">营销中心-区域销售</Option>
+                                    <Option value="4">营销中心-商业渠道事业部</Option>
+                                </Select>
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item label="负责销售：" name="responsibleSeller">
+                                <Input placeholder="请输入负责销售" />
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item label="客户联系人" name="clientAttention">
+                                <Input placeholder="请输入客户联系人" />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item label="客户办公电话：" name="clientOfficePhone">
+                                <Input placeholder="请输入客户办公电话" />
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item label="客户手机电话" name="clientMobilePhone">
+                                <Input placeholder="请输入客户手机电话" />
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8}>
+                            <Form.Item label="客户邮箱：" name="clientEmail">
+                                <Input placeholder="请输入客户邮箱" />
+                            </Form.Item>
+                        </Col>
+                        <Col span={8} offset={1}>
+                            <Form.Item label="客户省份:" name="clientProvince">
+                                <Select placeholder="请选择客户省份">
+                                    {topCity.map((item) => (
+                                        <Option value={item.name} key={item.sort}>
+                                            {item.name}
+                                        </Option>
+                                    ))}
+                                </Select>
+                            </Form.Item>
+                        </Col>
+                    </Row>
+                    <Row justify="space-between">
+                        <Col>
+                            <Button
+                                type="primary"
+                                onClick={() => {
+                                    history.push(`/project/list`);
+                                }}
+                            >
+                                返回
+                            </Button>
+                        </Col>
+                        <Col>
+                            <Button type="primary" htmlType="submit">
+                                保存
+                            </Button>
+                        </Col>
+                    </Row>
+                </Form>
+            </ScContent>
+        </>
+    );
+};
+export default AddNewProject;

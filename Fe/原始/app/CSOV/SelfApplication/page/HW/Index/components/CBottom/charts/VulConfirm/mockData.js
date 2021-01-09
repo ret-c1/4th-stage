@@ -1,0 +1,36 @@
+export const mockData = [
+    { fixType: '已修复', type: '渗透测试', value: 10, level: '高危' },
+    { fixType: '已修复', type: '渗透测试', value: 10, level: '中危' },
+    { fixType: '已修复', type: '渗透测试', value: 10, level: '低危' },
+    { fixType: '未修复', type: '渗透测试', value: 10, level: '高危' },
+    { fixType: '未修复', type: '渗透测试', value: 10, level: '中危' },
+    { fixType: '未修复', type: '渗透测试', value: 10, level: '低危' },
+
+    { fixType: '已修复', type: '漏洞扫描', value: 10, level: '高危' },
+    { fixType: '已修复', type: '漏洞扫描', value: 10, level: '中危' },
+    { fixType: '已修复', type: '漏洞扫描', value: 10, level: '低危' },
+    { fixType: '未修复', type: '漏洞扫描', value: 10, level: '高危' },
+    { fixType: '未修复', type: '漏洞扫描', value: 10, level: '中危' },
+    { fixType: '未修复', type: '漏洞扫描', value: 10, level: '低危' },
+
+    { fixType: '已修复', type: '代码审计', value: 10, level: '中危' },
+    { fixType: '已修复', type: '代码审计', value: 10, level: '高危' },
+    { fixType: '已修复', type: '代码审计', value: 10, level: '低危' },
+    { fixType: '未修复', type: '代码审计', value: 10, level: '中危' },
+    { fixType: '未修复', type: '代码审计', value: 10, level: '高危' },
+    { fixType: '未修复', type: '代码审计', value: 10, level: '低危' },
+
+    { fixType: '已修复', type: '配置检查', value: 10, level: '中危' },
+    { fixType: '已修复', type: '配置检查', value: 10, level: '高危' },
+    { fixType: '已修复', type: '配置检查', value: 10, level: '低危' },
+    { fixType: '未修复', type: '配置检查', value: 10, level: '中危' },
+    { fixType: '未修复', type: '配置检查', value: 10, level: '高危' },
+    { fixType: '未修复', type: '配置检查', value: 10, level: '低危' },
+
+    { fixType: '已修复', type: 'APP检测', value: 10, level: '中危' },
+    { fixType: '已修复', type: 'APP检测', value: 10, level: '高危' },
+    { fixType: '已修复', type: 'APP检测', value: 10, level: '低危' },
+    { fixType: '未修复', type: 'APP检测', value: 10, level: '中危' },
+    { fixType: '未修复', type: 'APP检测', value: 10, level: '高危' },
+    { fixType: '未修复', type: 'APP检测', value: 10, level: '低危' },
+];

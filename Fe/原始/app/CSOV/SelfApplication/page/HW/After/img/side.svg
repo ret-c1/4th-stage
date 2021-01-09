@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="483px" viewBox="0 0 37 483" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组 27</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="-221 225.104466 225.771546 225.104466 259 261.104466 -220.790286 261.104466"></polygon>
+        <filter x="-2.1%" y="-27.8%" width="104.2%" height="155.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="8" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.14   0 0 0 0 0.713333333   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-应急v2.0-最新事件" transform="translate(-232.000000, -359.000000)">
+            <g id="应急跟踪进度" transform="translate(232.000000, 358.000000)">
+                <g id="编组-27" transform="translate(0.000000, 1.000000)">
+                    <g id="矩形" opacity="0.3" transform="translate(19.000000, 243.104466) rotate(90.000000) translate(-19.000000, -243.104466) " fill="black" fill-opacity="1">
+                        <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="矩形" fill="#FACE49" x="1" y="0" width="36" height="4"></rect>
+                    <polygon id="矩形" fill="#FACE49" points="0.921052632 479 37 446 37 450 0.921052632 483"></polygon>
+                    <polygon id="矩形备份-10" fill-opacity="0.6" fill="#FACE49" points="0.921052632 470 37 438 37 442 0.921052632 474"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

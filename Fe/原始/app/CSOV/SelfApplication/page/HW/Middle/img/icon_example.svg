@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="104px" viewBox="0 0 86 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>图例</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-中v2.0" transform="translate(-529.000000, -294.000000)">
+            <g id="拓扑图" transform="translate(529.000000, 294.000000)">
+                <g id="图例">
+                    <rect id="矩形" fill="#CF3157" x="0" y="7" width="8" height="7.99880526"></rect>
+                    <text id="正在受攻击" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" fill="#FFFFFF" fill-opacity="0.85">
+                        <tspan x="16" y="15">正在受攻击</tspan>
+                    </text>
+                    <rect id="矩形" fill="#979B9F" x="0" y="34" width="8" height="7.99880526"></rect>
+                    <text id="被攻击成功" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" fill="#FFFFFF" fill-opacity="0.85">
+                        <tspan x="16" y="43">被攻击成功</tspan>
+                    </text>
+                    <text id="已解决" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" fill="#FFFFFF" fill-opacity="0.85">
+                        <tspan x="16" y="71">已解决</tspan>
+                    </text>
+                    <text id="其他" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" fill="#FFFFFF" fill-opacity="0.85">
+                        <tspan x="16" y="99">其他</tspan>
+                    </text>
+                    <rect id="矩形" fill="#01F0FF" x="-1.13686838e-13" y="63.1851852" width="8" height="7.99880526"></rect>
+                    <rect id="矩形备份-13" fill="#1E73B8" x="-1.13686838e-13" y="90" width="8" height="7.99880526"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

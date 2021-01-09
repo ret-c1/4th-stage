@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="42px" viewBox="0 0 76 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>矩形</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="6 0 82 0 51 42 6 42"></polygon>
+        <filter x="-4.6%" y="-8.3%" width="109.2%" height="116.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.993489583   0 0 0 0 0.890821421   0 0 0 0 0.377480608  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-应急v2.0-最新事件" transform="translate(-290.000000, -914.000000)">
+            <g id="table" transform="translate(284.000000, 870.000000)">
+                <g id="bg" transform="translate(0.000000, 44.000000)">
+                    <g id="编组-30">
+                        <g id="矩形" transform="translate(44.000000, 21.000000) scale(1, -1) translate(-44.000000, -21.000000) ">
+                            <use fill="#FDE360" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <path stroke-opacity="0.3" stroke="#FDE360" stroke-width="1" d="M6.5,0.5 L6.5,41.5 L50.7476008,41.5 L81.0095056,0.5 L6.5,0.5 Z" stroke-linejoin="square"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

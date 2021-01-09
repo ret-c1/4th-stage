@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="190px" height="173px" viewBox="0 0 183 161" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>进行中</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="82.5 -11 153.947096 30.25 153.947096 112.75 82.5 154 11.0529042 112.75 11.0529042 30.25"></polygon>
+        <filter x="-9.1%" y="-8.2%" width="118.2%" height="116.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.00392156863   0 0 0 0 0.941176471   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-9.8%" y="-8.8%" width="119.6%" height="117.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="4" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.00392156863   0 0 0 0 0.941176471   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-4" points="82.5 -4.65384615 148.451165 33.4230769 148.451165 109.576923 82.5 147.653846 16.5488346 109.576923 16.5488346 33.4230769"></polygon>
+        <filter x="-12.1%" y="-10.5%" width="124.3%" height="121.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="8" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="12" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.00392156863   0 0 0 0 0.941176471   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-前v2.0" transform="translate(-1054.000000, -483.000000)">
+            <g id="漏洞处置情况" transform="translate(232.000000, 238.000000)">
+                <g id="流程图" transform="translate(363.000000, 60.000000)">
+                    <g id="进行中" transform="translate(468.000000, 194.000000)">
+                        <g id="多边形外" opacity="0.25" transform="translate(82.500000, 71.500000) rotate(90.000000) translate(-82.500000, -71.500000) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#031345" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <path stroke="#01F0FF" stroke-width="1" d="M82.5,-11.5773503 L154.447096,29.9613249 L154.447096,113.038675 L82.5,154.57735 L10.5529042,113.038675 L10.5529042,29.9613249 L82.5,-11.5773503 Z"></path>
+                        </g>
+                        <g id="多边形内" transform="translate(82.500000, 71.500000) rotate(90.000000) translate(-82.500000, -71.500000) " fill="black" fill-opacity="1">
+                            <use filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        </g>
+                        <path d="M141.044487,101.999335 L120.576923,137.451165 L44.4230769,137.451165 L23.9544872,101.999335 L141.044487,101.999335 Z" id="数字背景" fill-opacity="0.1" fill="#01F0FF"></path>
+                        <path d="M11.0529042,39.4215803 L11.0529042,30.25 L18.3429346,26.041099 M75.1375082,-6.74926339 L82.5,-11 L89.9057825,-6.72426947 M146.695826,26.0634775 L153.947096,30.25 L153.947096,39.4047025 M153.947096,103.583369 L153.947096,112.75 L146.73762,116.912393 M89.7894482,149.791435 L82.5,154 L75.1724123,149.769415 M18.3911464,116.986736 L11.0529042,112.75 L11.0529042,103.576044" id="角" stroke="#01F0FF" stroke-width="3" transform="translate(82.500000, 71.500000) rotate(90.000000) translate(-82.500000, -71.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

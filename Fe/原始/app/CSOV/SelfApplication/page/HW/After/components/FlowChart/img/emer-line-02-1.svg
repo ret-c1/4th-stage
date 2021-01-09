@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="67px" viewBox="0 0 30 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组 23备份 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#3590FF" offset="0%"></stop>
+            <stop stop-color="#3590FF" stop-opacity="0.6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-应急v2.0-整体概况" transform="translate(-896.000000, -482.000000)">
+            <g id="应急跟踪进度" transform="translate(248.000000, 411.000000)">
+                <g id="编组-10" transform="translate(447.000000, 0.000000)">
+                    <g id="编组-23备份-2" transform="translate(215.500000, 105.000000) scale(-1, 1) translate(-215.500000, -105.000000) translate(201.000000, 72.000000)">
+                        <circle id="椭圆形备份-2" fill="#3590FF" cx="19" cy="62" r="4"></circle>
+                        <polyline id="直线备份" stroke="url(#linearGradient-1)" stroke-width="2" opacity="0.5" stroke-linecap="square" transform="translate(9.500000, 31.000000) scale(-1, -1) translate(-9.500000, -31.000000) " points="19 62 -7.10542736e-15 62 1.90070182e-13 0"></polyline>
+                        <g id="编组-10" transform="translate(19.000000, 31.000000) scale(1, -1) rotate(90.000000) translate(-19.000000, -31.000000) translate(6.000000, 21.000000)" fill="#1890FF">
+                            <polygon id="矩形备份-22" points="0 0 10 0 18 10 10 20 0 20 8 10"></polygon>
+                            <polygon id="矩形备份-23" opacity="0.7" points="14 0 18 -8.8817842e-15 26 10 18 20 14 20 22 10"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

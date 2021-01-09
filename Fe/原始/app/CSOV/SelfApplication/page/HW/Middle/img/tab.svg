@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="26px" viewBox="0 0 150 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 25备份 3</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HW-应急v2.0-整体概况" transform="translate(-1174.000000, -310.000000)">
+            <g id="编组-25备份-3" transform="translate(1175.000000, 310.000000)">
+                <g id="编组-24">
+                    <polyline id="直线-2" stroke-opacity="0.2" stroke="#1890FF" stroke-linecap="square" points="4.5 1 1.5 1 0 4 0 22 1.5 25 4.5 25"></polyline>
+                    <rect id="矩形" fill="#1890FF" x="3" y="0" width="2" height="2"></rect>
+                    <rect id="矩形备份-24" fill="#1890FF" x="3" y="24" width="2" height="2"></rect>
+                </g>
+                <g id="编组-24备份" transform="translate(145.500000, 13.000000) scale(-1, 1) translate(-145.500000, -13.000000) translate(143.000000, 0.000000)">
+                    <polyline id="直线-2" stroke-opacity="0.2" stroke="#1890FF" stroke-linecap="square" points="4.5 1 1.5 1 0 4 0 21 1.5 25 4.5 25"></polyline>
+                    <rect id="矩形" fill="#1890FF" x="3" y="0" width="2" height="2"></rect>
+                    <rect id="矩形备份-24" fill="#1890FF" x="3" y="24" width="2" height="2"></rect>
+                </g>
+                <rect id="矩形" fill-opacity="0.04" fill="#FFFFFF" x="75" y="3" width="68" height="20"></rect>
+                <rect id="矩形备份-25" fill-opacity="0.04" fill="#FFFFFF" x="5" y="3" width="68" height="20"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
