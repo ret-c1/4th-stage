@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        // Target latest version of ECMAScript.
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        // Import non-ES modules as default imports.
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        // Enable strictest settings like strictNullChecks & noImplicitAny.
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        // Search under node_modules for non-relative imports.
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        // Don't emit; allow Babel to transform files.
+        "noEmit": true,
+        // use typescript to transpile jsx to js
+        "jsx": "react"
+    },
+    "include": [
+        "./app/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

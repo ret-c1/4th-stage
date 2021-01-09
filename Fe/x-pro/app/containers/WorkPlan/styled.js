@@ -1,0 +1,57 @@
+import styled from 'styled-components';
+import { Tag, Card } from 'antd';
+
+export const ScModalSubmit = styled.div`
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    height: 56px;
+    padding: 10px 24px;
+    line-height: 56px;
+    background: #fff;
+    border-top: 1px solid #e8e8e8;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.03);
+`;
+
+export const ScFooterToolbar = styled.div`
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    height: 56px;
+    background: #fff;
+    border-top: 1px solid #e8e8e8;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.03);
+`;
+
+export const ScCard = styled(Card)`
+    margin: 14px 24px;
+`;
+
+export const ScCardDetail = styled(Card)`
+    margin: 16px 24px;
+`;
+export const ScTitle = styled.div`
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 28px;
+`;
+export const ScContent = styled.div`
+    margin: 24px;
+    background: #fff;
+    border-radius: 2px;
+    padding: 20px 0;
+`;
+export const ScTableContent = styled.div`
+    margin: 10px 0px;
+    background: #fff;
+    border-radius: 2px;
+    padding: 30px 30px;
+`;
+export const ScTag = styled(Tag)`
+    margin: 3px 2px;
+`;

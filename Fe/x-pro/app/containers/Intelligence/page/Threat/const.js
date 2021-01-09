@@ -1,0 +1,48 @@
+// 步骤的跳转
+export const GOTO_STEP_ACTION = 'threat/GOTO_STEP_ACTION';
+// 准备提交时间
+export const RECORD_READY_TIME = 'threat/RECORD_READY_TIME';
+
+// 保存planId, threatId
+export const SAVE_ID_ACTION = 'threat/SAVE_ID_ACTION';
+
+// 获取隐患资产列表
+export const GET_SITUATION_PENDING = 'threat/GET_SITUATION_PENDING';
+export const GET_SITUATION_FULFILLED = 'threat/GET_SITUATION_FULFILLED';
+// 告警事件选择记录
+export const GET_WARNING_EVENT_PENDING = 'threat/GET_WARNING_EVENT_PENDING';
+export const GET_WARNING_EVENT_FULFILLED = 'threat/GET_WARNING_EVENT_FULFILLED';
+// 获取选择资产IP
+export const GET_CHOOSE_PROPERTY_ACTION = 'threat/GET_CHOOSE_PROPERTY_ACTION';
+export const CLEAR_PROPERTY_ACTION = 'threat/CLEAR_PROPERTY_ACTION';
+
+// 获取事件选择ip
+export const GET_CHOOSE_WARNING_PROPERTY_ACTION = 'threat/GET_CHOOSE_WARNING_PROPERTY_ACTION';
+export const CLEAR_WARNING_PROPERTY_ACTION = 'threat/CLEAR_WARNING_PROPERTY_ACTION';
+
+// 隐患资产详情查看
+export const CHECK_PROPERTY_DETAIL_FULFILLED = 'threat/CHECK_PROPERTY_DETAIL_FULFILLED';
+export const CHANGE_PROPERTY_MODAL_ACTION = 'threat/CHANGE_PROPERTY_MODAL_ACTION';
+
+// 获取告警记录列表
+export const GET_WARNING_LIST_PENDING = 'threat/GET_WARNING_LIST_PENDING';
+export const GET_WARNING_LIST_FULFILLED = 'threat/GET_WARNING_LIST_FULFILLED';
+
+//  获取日志记录列表
+export const GET_LOG_LIST_PENDING = 'threat/GET_LOG_LIST_PENDING';
+export const GET_LOG_LIST_FULFILLED = 'threat/GET_LOG_LIST_FULFILLED';
+
+// 获取事件研判列表
+export const GET_EVENT_LIST_PENDING = 'threat/GET_EVENT_LIST_PENDING';
+export const GET_EVENT_LIST_FULFILLED = 'threat/GET_EVENT_LIST_FULFILLED';
+
+// 排查结果列表
+export const GET_RESULT_LIST_PENDING = 'threat/GET_RESULT_LIST_PENDING';
+export const GET_RESULT_LIST_FULFILLED = 'threat/GET_RESULT_LIST_FULFILLED';
+
+// 查询告警分析记录
+export const QUERY_WARNING_ACTION = 'threat/QUERY_WARNING_ACTION';
+// 查询日志分析记录
+export const QUERY_LOG_ACTION = 'threat/QUERY_LOG_ACTION';
+// 查询事件研判记录
+export const QUERY_EVENT_ACTION = 'threat/QUERY_EVENT_ACTION';

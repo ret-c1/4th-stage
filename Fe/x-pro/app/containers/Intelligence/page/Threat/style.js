@@ -1,0 +1,61 @@
+import styled from 'styled-components';
+import spread from '@assets/images/spread.png';
+import fullScreen from '@assets/images/fullScreen.png';
+
+export const ScSection = styled.div`
+    font-family: PingFangSC-Regular;
+`;
+
+export const ScContent = styled.div`
+    margin: 24px 24px 0;
+`;
+
+export const ScFooterToolbar = styled.div`
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    height: 56px;
+    padding: 0 24px;
+    line-height: 56px;
+    background: #fff;
+    border-top: 1px solid #e8e8e8;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.03);
+`;
+
+export const ScChanged = styled.span`
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.65);
+    text-align: right;
+    line-height: 22px;
+    margin: 0 16px;
+`;
+export const ScSpread = styled.div`
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url(${spread}) no-repeat;
+    margin-right: 8px;
+`;
+
+export const ScFullScreen = styled.div`
+    width: 16px;
+    height: 16px;
+    float: right;
+    background: url(${fullScreen}) no-repeat;
+    margin-right: 8px;
+`;
+export const ScModalSubmit = styled.div`
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    height: 56px;
+    padding: 10px 24px;
+    line-height: 56px;
+    background: #fff;
+    border-top: 1px solid #e8e8e8;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.03);
+`;
